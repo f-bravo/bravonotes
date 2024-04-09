@@ -1,4 +1,4 @@
-import { Container, Links } from './styles'
+import { Container, Links, Content } from './styles'
 
 import { Tag } from '../../components/Tag'
 import { Header } from '../../components/Header'
@@ -17,21 +17,30 @@ export function Details() {
     <Container>
       <Header />
 
-      <ButtonText title="Excluir nota"/>
+      <main>
+        <Content>
 
-      <Section title="Link úteis" >
-        <Links>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-        </Links>
-      </Section>  
+          <ButtonText title="Excluir nota"/>
 
-      <Section title="Marcadores" >
-        <Tag title="express"/>
-        <Tag title="nodejs"/>
-      </Section>
+          <h1>introdução ao React</h1>
 
-      <Button title="Voltar" />
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quasi rem, asperiores culpa quam commodi incidunt voluptas. Quibusdam provident amet doloribus perferendis dolorum architecto, expedita necessitatibus impedit distinctio numquam autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur est quibusdam quaerat voluptatum fuga alias in fugiat, velit deserunt doloremque sequi cumque culpa nam neque? Vel sed quibusdam perspiciatis.</p>
+
+          <Section title="Link úteis" >
+            <Links>
+              <li><a href="#">https://github.com/f-bravo/gptblog</a></li>
+              <li><a href="#">https://github.com/f-bravo/bravonotes</a></li>
+            </Links>
+          </Section>  
+
+          <Section title="Marcadores" >
+            <Tag title="express"/>
+            <Tag title="nodejs"/>
+          </Section>
+
+          <Button title="Voltar" />
+        </Content>
+      </main>
     </Container>
   )
 }

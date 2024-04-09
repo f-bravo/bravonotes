@@ -9,6 +9,13 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
+  // A main vai ocupar a tela toda
+  > main {
+    grid-area: content;
+    overflow-y: scroll;
+    padding: 64px 0;
+  }
 `;
 
 export const Links = styled.ul`
@@ -20,5 +27,30 @@ export const Links = styled.ul`
     a {
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
+  }
+`;
+
+export const Content = styled.div`
+  max-width: 550px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  // Posicionando o ButtoText a esquerda
+  > button:first-child {
+    align-self: end;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 64px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: justify;
   }
 `;
