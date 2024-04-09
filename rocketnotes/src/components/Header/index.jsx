@@ -1,6 +1,5 @@
 // Importanto a biblioteca de ícones. Deposi da / a biblioteca. Na importação os íncones 
 // https://react-icons.github.io/react-icons/search/#q=RiShut
-
 import { RiShutDownLine } from 'react-icons/ri'
 
 import { Container, Profile, Logout } from "./styles";
