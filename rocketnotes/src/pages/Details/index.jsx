@@ -1,9 +1,10 @@
 import { Container, Links } from './styles'
 
+import { Tag } from '../../components/Tag'
 import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
+import { ButtonText } from '../../components/ButtonText'
 import { Section } from '../../components/Section'
-import { Tag } from '../../components/Tag'
 
 // title="Login" --> é uma props. Props são passadas dessa forma dentro dos componentes
 
@@ -14,7 +15,9 @@ export function Details() {
   
   return(
     <Container>
-      <Header/>
+      <Header />
+
+      <ButtonText title="Excluir nota"/>
 
       <Section title="Link úteis" >
         <Links>
