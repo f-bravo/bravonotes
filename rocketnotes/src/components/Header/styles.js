@@ -27,14 +27,14 @@ export const Profile = styled.div`
     height: 56px;
     border-radius: 50%;
   }
-// Trabalhando a DIV paa mudar o direcionamento dos textos
+// Trabalhando a DIV para mudar o direcionamento dos textos
   > div {
     display: flex;
     flex-direction: column;
     margin-left: 16px;
     line-height: 24px; // N usou paddin e sim altura da linha para afastar os textos na vertical
 
-    // A especificidade já é grande. N  precisa colcoar sinal de maior > aqui
+    // A especificidade já é grande. N  precisa colocar sinal de maior > aqui
     span {
       font-size: 14px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};

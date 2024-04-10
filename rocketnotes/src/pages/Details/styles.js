@@ -37,7 +37,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-  // Posicionando o ButtoText a esquerda
+  // Posicionando o ButtonText a esquerda
   > button:first-child {
     align-self: end;
   }
