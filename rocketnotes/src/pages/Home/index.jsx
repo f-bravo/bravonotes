@@ -34,7 +34,6 @@ export function Home(){
             tags: [
               {id: '1', name:'react'},
               {id: '2', name:'nodejs'},
-
             ] 
           }}/>
 

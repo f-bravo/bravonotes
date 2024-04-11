@@ -20,7 +20,7 @@ export function Note({ data, ...rest }) {
 
 /* Se n houvesse o Componente Tag ficaria assim:
 {
-  data.tags.map(tag => {  //Percore cada tag <span>. Precisa por um ID pois cada elemento é único
+  data.tags.map(tag => {  //Percore cada tag <span>. Precisa por um ID p/ cada Tag
     <span key={tag.id}>
       {tag.name}
     </span>
