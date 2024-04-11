@@ -9,7 +9,21 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+  
+  // Para fixar o cabeçalho
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+  }
+
+  .tags{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; // Joga a Tag para a linha de baixo paa ficar apenas 2 por row
+  }
 `;
+
+  
 
 export const Form = styled.form`
   max-width: 550px;

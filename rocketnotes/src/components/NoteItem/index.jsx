@@ -15,6 +15,7 @@ export function NoteItem({ isNew, value, onClick, ...rest }) {
         <button
           type="button" 
           onClick={onClick}
+          className={isNew ? 'button-add' : 'button-delete'} //Classe de cor do botão. New? Orange se não red
         >
           { isNew ? <FiPlus /> : <FiX />}  
         </button>
