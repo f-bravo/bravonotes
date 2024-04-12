@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.header`
   grid-area: header; // Grip-area: Ao rolar a barra o cabeçalho fica fixo
@@ -8,16 +9,16 @@ export const Container = styled.header`
 // linha que fica embaixo do cabeçalho
   border-bottom-width: 1px; 
   border-bottom-style: solid;
-  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUD_700};
+  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   display: flex;
   justify-content: space-between;
 
   padding: 0 80px;
-
+  
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)` // Trocou a Div pelo Link. Ao clicar no header volta p a home
   display: flex;
   align-items: center; // para alinhar no centro da DIV - alinhamento horizontal
 

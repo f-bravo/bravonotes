@@ -11,7 +11,7 @@ um flex direction nele.*/
 export function Header(){
   return(
     <Container>
-      <Profile>
+      <Profile to="/profile">
         <img src="https://github.com/f-bravo.png" alt="Foto do user" />
 
         <div>
